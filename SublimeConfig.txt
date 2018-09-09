@@ -1,0 +1,74 @@
+Welcome to the SublimeText3-Java wiki!
+***
+1. Hide Menu in ST3 -->  goto "_**view**_" tab --> click "_**hide menu**_"
+2. Show hidden menu --> _**alt+v**_ --> goto "_**view**_" tab --> click "_**show menu**_"
+
+***
+Compile Java Programs in ST3
+***
+* "_**ctrl+n**_" to create new file. "_**ctrl+s**_" to save new file. 
+* Name you java file anything with .java extension. Example - "Welcome.java"
+* write your java code. "_**ctrl+shift+b**_" to compile your java code.
+* To run this code, you still need cmd. >java your_public_class_name
+* If you want to compile & run your java code within ST3, do the following settings -
+1. Download 7zip software & install it. [7-Zip website](http://www.7-zip.org/)
+2. Goto ST3 installation folder. "_**C:\Program Files\Sublime Text 3\Packages**_".
+3. Goto file - "_**Java.sublime-package**_" --> right click "_**7-Zip**_" --> goto "_**open archive**_" option.
+4. Goto file - "_**JavaC.sublime-build**_" , right click & "edit"
+5. Copy & paste following code - 
+`{`
+`"cmd": ["javac", "$file_name","&&","java", "$file_base_name"],`
+`"file_regex": "^(...?):([0-9]):?([0-9]*)",`
+`"selector": "source.java",`
+`"shell": true`
+`}`
+
+save it. Make sure ST3 is closed.
+* "_**ctrl+shift+b**_" to compile & run java code. Choose "_**javaC**_" option. or "_**ctrl+b**_" to compile & run java code. Any one can do the job.
+
+## _**Limitations with this option**_
+1. You cannot input text/values in sublime text given output section.
+2. Also you have no compile option. Internally, it will only compile like --> _**javac FileName.java**_
+If you want to compile your java file into a package like this --> _**javac -d . my.JavaBean.java**_, you have to open separate terminal window to compile like this.
+
+***
+Change layout in ST3
+***
+
+* goto "_**view**_" tab --> "_**layout**_" option
+* choose "**_grid_**" for 4 different windows. You can choose 2,3 or 4 windows.
+* use "_**ctrl+3**_" to switch to 3rd window. Hence, if 4 windows "**_ctrl+4_**" to switch to 4th window. "**_ctrl+3_**" to switch to 3rd window.
+* use "_**ctrl+n**_" to create new tabs in same window
+* If you want more than 4 windows at same time, goto "_**view**_" --> "**_groups_**" option --> click "_**new group**_"
+
+
+***
+Install a Material Design Theme
+***
+* "_**ctrl+shift+p**_" --> click "_**install package**_" --> type "_**material**_" --> scroll down & click "_**materialize**_", install it.
+* To activate "_**material theme**_", goto "_**preferences**_" --> "_**package settings**_" --> "_**material theme**_" --> "_**activate**_"
+* "_**ctrl+shift+p**_" --> to install or remove package. If you want to install any package type "_**install package**_" --> goto any package you want to install. If you want to remove package, type "_**remove package**_" --> uninstall any package you just installed.
+* "_**ctrl+p**_" to hover/switch between tabs in sublime text 3.
+* Goto "_**file**_" tab --> click "_**open folder**_" to view all files in any folder in sidebar of ST3
+
+
+***
+Create new file on the go with - "_**ctrl+alt+n**_"
+***
+* Again "_**ctrl+shift+p**_" --> type "_**install package**_" --> click it, type "_**AdvancedNewFile**_", click it & install it.
+* Now "_**ctrl+alt+n**_" to create new file on the go. You will see panel on bottom left, just type name your file & it will be saved automatically.
+
+
+***
+To install any color scheme, goto - [Sublime Text 3 Color Schemes](https://packagecontrol.io/browse/labels/color%20scheme)
+***
+* "_**ctrl+shift+p**_" --> type "_**install package**_" --> type name of package you want to install.
+* Activate new color scheme --> "_**preferences**_" tab --> "_**color scheme**_" --> click & install your color scheme.
+
+
+***
+Configure installed package/theme on the go with drop down menu settings in ST3
+***
+* "_**preferences**_" tab --> "_**package settings**_" --> "_**material theme**_" (If you want to configure material theme) --> click "_**configure**_"
+
+
