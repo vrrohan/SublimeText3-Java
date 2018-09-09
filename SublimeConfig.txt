@@ -72,3 +72,5 @@ Configure installed package/theme on the go with drop down menu settings in ST3
 * "_**preferences**_" tab --> "_**package settings**_" --> "_**material theme**_" (If you want to configure material theme) --> click "_**configure**_"
 
 
+
+//This is a new line added
